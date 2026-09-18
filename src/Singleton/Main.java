@@ -1,10 +1,10 @@
-import java.util.Scanner;
+package Singleton;
 
 public class Main {
     public static void main(String [] args){
         ConsecutivoFactura a = ConsecutivoFactura.getInstance();
         ConsecutivoFactura b = ConsecutivoFactura.getInstance();
-        //ConsecutivoFactura c = new ConsecutivoFactura();
+        //Singleton.ConsecutivoFactura c = new Singleton.ConsecutivoFactura();
         System.out.println("La linea new ConsecutivaFactura esta comentada ya que no compila ");
         Runnable tarea = () -> {
             for ( int i = 0; i < 100; i++){
